@@ -49,6 +49,3 @@ jobs:
     
     - name: Push files to S3
       run: aws s3 sync . s3://sunchurajula --size-only --exclude ".github/*"
-    
-         cluster: default
-        wait-for-service-stability: true
